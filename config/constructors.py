@@ -3,9 +3,9 @@
 # Updated manually only when a team rebrand occurs
 # ═══════════════════════════════════════════════════════════════════════
 
-# Maps current constructor name to all historical Jolpica IDs
 CONSTRUCTOR_ID_MAP = {
-    "McLaren":      ["mclaren"],
+    "McLaren":      ["mclaren", "mclaren-ford", "mclaren-brm",
+                     "mclaren-alfa_romeo", "mclaren-seren"],
     "Mercedes":     ["mercedes"],
     "Ferrari":      ["ferrari"],
     "Red Bull":     ["red_bull"],
@@ -15,10 +15,10 @@ CONSTRUCTOR_ID_MAP = {
     "RB":           ["rb", "alphatauri", "toro_rosso"],
     "Haas":         ["haas"],
     "Sauber":       ["sauber", "alfa"],
+    "Audi":         ["audi"],
+    "Cadillac":     ["cadillac"],
 }
 
-# Maps any Jolpica constructor ID to current team name
-# Auto-derived from CONSTRUCTOR_ID_MAP — do not edit manually
 JOLPICA_TO_CURRENT = {
     jolpica_id: current_name
     for current_name, jolpica_ids in CONSTRUCTOR_ID_MAP.items()
